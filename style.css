@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    overflow-x: hidden;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: inline-block;
+}
+
+.testo-sopra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 11vh;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 2px 2px 4px rgb(25, 136, 187);
+}
+
+.sottotitolo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 185%);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    text-shadow: 2px 2px 4px rgb(25, 136, 187);
+}
+
+.scritta-header {
+    font-size: 2vh;
+    padding: 10px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000;
+    background-color: #0d6f7c;
+    font-family: Georgia, serif;
+}
+
+/* Stili per il menu e i bottoni */
+.menu-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: rgb(25, 136, 187);
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.menu-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.menu-btn:hover {
+    background-color: #0d6f7c;
+    color: white;
+}
+
+.menu-btn.active {
+    background-color: #0d6f7c;
+    color: white;
+}
+
+/* Contenitore principale per l'immagine di sfondo e le sezioni di contenuto */
+.content-container {
+    width: 100%;
+    position: relative;
+    height: 90vh;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.background-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Stili per le sezioni di contenuto */
+.content-sections {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    pointer-events: none; /* Questo è importante */
+}
+
+.content-section {
+    width: 80%;
+    max-width: 1200px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 1.5s ease;
+    pointer-events: none; /* Disabilita eventi di default */
+}
+
+.content-section.active {
+    pointer-events: auto; /* Riabilita eventi per la sezione attiva */
+}
+
+.content-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0d6f7c;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.content-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* Stili per il layout a griglia */
+.content-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.content-text {
+    flex: 3;
+    position: relative;
+}
+
+.content-images {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.image-box {
+    width: 100%;
+    height: calc(50% - 10px);
+    background-color: rgba(240, 240, 240, 0.9);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: none; /* Tutte le immagini sono nascoste di default */
+}
+
+.image-box.active {
+    display: block; /* Solo le immagini attive sono visibili */
+}
+
+.section-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Stile per i link e i bottoni dentro le sezioni */
+.content-section a, .content-section button {
+    cursor: pointer;
+    display: inline-block;
+    color: #0d6f7c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.content-section a:hover, .content-section button:hover {
+    color: #0a5761;
+    text-decoration: underline;
+}
+
+.content-section button {
+    background-color: #0d6f7c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.content-section button:hover {
+    background-color: #0a5761;
+    text-decoration: none;
+}
+
+/* Stili per pagine di contenuto */
+.content-page {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.content-page.active {
+    display: block;
+    opacity: 1;
+}
+
+mark {
+    background-color: rgba(20, 139, 218, 0.699);
+    color: rgb(255, 255, 255);
+}
+
+/* Classe per far occupare tutta l'altezza disponibile alle immagini singole */
+.image-box.full-height {
+    height: 100%;
+}
+
+/* Aggiungi questo al tuo file style.css */
+.section-video {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px; /* Mantiene gli stessi angoli arrotondati dell'immagine */
+}
+
+/* Aggiorna la regola esistente per includere anche i video */
+.image-box.active {
+    display: block; /* Solo le immagini e i video attivi sono visibili */
+}
+
+.separatore {
+    display: inline-block;
+    width: 1510px; /* Regola questa larghezza come preferisci */
+    text-shadow: none !important; /* Rimuove qualsiasi ombra di testo */
+    background: transparent; /* Assicura che non ci sia sfondo */
+}
+
+.credits-container {
+    position: absolute; /* Fisso rispetto alla finestra del browser */
+    bottom: 20px; /* Distanza dal bordo inferiore */
+    left: 100;
+    right: 0;
+    text-align: right;
+    background-color: rgba(36, 122, 202, 0.7); /* Sfondo nero semi-trasparente */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Valore alto per assicurarsi che sia sopra altri elementi */
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.credits-container a {
+    color: #ffcc00; /* Colore giallo per il link */
+    text-decoration: underline;
+    font-weight: bold;
+}
+
