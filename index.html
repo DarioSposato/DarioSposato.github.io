@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <!-- Definizione del tipo di documento e della lingua (italiano) -->
+    <meta charset="UTF-8">
+    <!-- Imposta la codifica dei caratteri per supportare correttamente le lettere accentate italiane -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adatta la pagina alla dimensione dello schermo del dispositivo (responsive design) -->
+    
+    <title>Napoli Utopica</title>
+    <!-- Titolo della pagina che apparirà nella scheda del browser -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Collegamento al file di stile esterno che contiene tutte le regole di formattazione -->
+</head>
+<body>
+    <!-- Inizio del corpo della pagina, contiene tutto ciò che verrà visualizzato -->
+    
+    <header>
+        <!-- Intestazione della pagina -->
+        <div class="scritta-header">Napoli Utopica-Città futura<span class="separatore"></span>Dario Sposato</div>
+        <!-- Titolo principale e nome dell'autore con un separatore grafico tra di essi -->
+    </header>
+    
+    <div class="main-content">
+        <!-- Contenitore principale di tutti i contenuti della pagina -->
+        <div class="banner">
+            <!-- Banner in alto con immagine e testo sovrapposto -->
+            <img src="ChatGpt.png" alt="Banner Napoli">
+            <!-- Immagine del banner con testo alternativo per l'accessibilità -->
+            <div class="testo-sopra">NEA-NEAPOLIS</div>
+            <!-- Testo principale sovrapposto all'immagine del banner -->
+            <div class="sottotitolo">Legalità condivisa: Napoli tra arte, moda e beni comuni.</div>
+            <!-- Sottotitolo descrittivo del progetto -->
+        </div>
+        
+        <div class="menu-container">
+            <!-- Contenitore dei pulsanti di navigazione -->
+            <div class="menu-buttons">
+                <!-- Pulsanti per navigare tra le diverse sezioni del progetto -->
+                <button class="menu-btn" data-target="pg">Panoramica Generale</button>
+                <!-- Pulsante per la sezione Panoramica Generale con attributo che specifica l'ID della sezione target -->
+                <button class="menu-btn" data-target="arte">Arte</button>
+                <!-- Pulsante per la sezione Arte -->
+                <button class="menu-btn" data-target="moda">Moda</button>
+                <!-- Pulsante per la sezione Moda -->
+                <button class="menu-btn" data-target="benicomuni">Beni comuni</button>
+                <!-- Pulsante per la sezione Beni comuni -->
+            </div>
+        </div>
+        
+      
+
+        <div class="content-container">
+            <!-- Contenitore di tutte le sezioni di contenuto -->
+            <div class="background-image">
+                <!-- Immagine di sfondo per tutte le sezioni -->
+                <img src="Vesuvio.png" alt="ImmagineSfondo">
+                <!-- Immagine del Vesuvio come sfondo -->
+            </div>
+
+           <!-- Aggiunto qui il container dei crediti in modo che sia sovrapposto all'immagine di sfondo -->
+    <div class="credits-container">
+        <p>realizzazione immagini e rispettivi crediti:</p>
+        <a href="crediti immagini.pdf">Tutorial Immagini</a>
+    </div>
+
+            <div class="content-sections">
+                <!-- SEZIONE 1: PANORAMICA GENERALE -->
+                <div id="pg" class="content-section">
+                    <!-- Identificativo univoco per la sezione Panoramica Generale -->
+                    <div class="content-grid">
+                        <!-- Griglia per organizzare testo e immagini affiancati -->
+                        <div class="content-text">
+                            <!-- Contenitore del testo della sezione -->
+                            
+                            <!-- Pagina 1 della Panoramica Generale -->
+                            <div class="content-page pg-page active" data-page="1">
+                                <!-- "active" indica che questa pagina è visualizzata inizialmente -->
+                                <!-- "data-page" indica il numero della pagina all'interno della sezione -->
+                                <h2>Panoramica Generale</h2>
+                                <!-- Titolo della sezione -->
+                                <p>Secondo il Ministero dell'Interno, Napoli è una città con un alto tasso di criminalità organizzata, ma la maggior parte della popolazione è estranea a questi fenomeni.
+                                    Basandosi sui seguenti dati:
+                                </p>
+                                <ul>
+                                    <!-- Lista puntata dei dati utilizzati per l'analisi -->
+                                    <li>Dati nazionali sui pregiudicati</li>
+                                    <li>Stime sul lavoro nero</li>
+                                    <li>Reati minori o amministrativi</li>
+                                </ul><br>
+                                <p>ho costruito una stima ragionata sulla base di:</p>
+                                <ul>
+                                    <!-- Lista puntata della metodologia utilizzata -->
+                                    <li>Percentuali nazionali disponibili</li>
+                                    <li>Applicazione al territorio locale</li>
+                                    <li>Esperienze e tendenze conosciute in Campania e Napoli</li>
+                                    <li>Dati dell'ISTAT, Ministero dell'Interno e varie inchieste giornalistiche.</li>
+                                </ul>
+                                <p>Otteniamo che circa 200.000 persone sarebbero coinvolte in qualche tipo di illegalità su più di 900.000 totali. <br>
+                                    Risultato: circa 700.000 napoletani sarebbero "totalmente in regola".
+                                </p>
+                                <p><mark>Questa è una stima molto approssimativa e potrebbe variare in base a criteri più precisi.</mark></p>
+                                <!-- L'elemento "mark" evidenzia questo testo come importante -->
+                                <p>Mi sono immaginato una Napoli dove qualsiasi tipo di illecito viene rifiutato per cultura.
+                                    Eliminando tutte le persone certificate criminali ma anche quelle con apparenti associazioni a Clan camorristici, lasciando come specificato precedentemente circa 700.000 abitanti totalmente in regola. 
+                                    Un posto utopistico dove nessuno commette nemmeno la più infima irregolarità.
+                                    Ho studiato questo scenario esaminando <mark>3 criteri: arte, moda, beni comuni e la associazione tra di loro.</mark></p>
+                                    
+                                <p><button class="test-button" data-section="pg" data-goto="2">Pagina successiva</button></p>
+                                <!-- Pulsante per navigare alla pagina 2 di questa sezione -->
+                            </div>
+                            
+                            <!-- Pagina 2 della Panoramica Generale -->
+                            <div class="content-page pg-page" data-page="2">
+                                <!-- Questa pagina inizialmente non ha la classe "active", quindi è nascosta -->
+                                <h2>Panoramica Generale - Pagina 2</h2>
+                                <p>In questa panoramica generale possiamo esaminare come il vivo della città cambierebbe: </p>
+                                <ol>
+                                    <!-- Lista numerata per i punti principali -->
+                                    <li><b>Le strade sarebbero più vuote?</b></li>
+                                    <!-- Il tag "b" rende il testo in grassetto -->
+                                    <p>
+                                        L'uscita di scena di circa <mark>200.000 persone</mark> 
+                                        implicherebbe un ridimensionamento dell'affollamento urbano, in particolare in alcuni quartieri storicamente problematici.
+                                        però se immaginiamo a livello turistico:
+                                    </p>
+                                    <ul>
+                                        <li>L'immagine internazionale di Napoli migliorerebbe radicalmente: da città percepita come pericolosa a capitale mediterranea della legalità.</li><br>
+                                        <li>Aumenterebbe il turismo culturale, etico, sostenibile: i visitatori si sentirebbero più sicuri, verrebbero attratti da questa "nuova Napoli modello", 
+                                            una città d'arte e moda dove il senso civico è parte dell'identità locale.</li><br>
+                                        <li>Potrebbero nascere percorsi turistici alternativi, come visite nei quartieri rigenerati o in ex luoghi simbolo della criminalità ora convertiti a musei, 
+                                            atelier o spazi civici.</li>
+                                    </ul><br>
+
+                                    <li><b>Come cambierebbe a livello ecologistico?</b></li>
+                                    <p> A livello ecologistico, una Napoli liberata dall'illegalità e alleggerita demograficamente avrebbe effetti positivi sull'ambiente. 
+                                        La riduzione della popolazione diminuirebbe la pressione su risorse e infrastrutture,
+                                        mentre l'assenza di traffici illeciti legati ai rifiuti permetterebbe una gestione più trasparente e sostenibile. 
+                                        In questa visione, <mark>l'ecologia diventerebbe parte integrante dell'identità civica</mark> della città.</p>
+                                    <li><b>Come cambierebbe l'opinione pubblica a livello politico?</b></li>
+                                    <p>Il consenso politico si orienterebbe verso forze che promuovono <mark>legalità, cultura, sostenibilità e inclusione</mark>, mentre perderebbero terreno le logiche clientelari o populiste legate a un passato di ambiguità. 
+                                        Napoli, in questo scenario, potrebbe persino diventare un modello a livello nazionale, 
+                                        dimostrando come la rinascita civile e culturale possa tradursi in un nuovo modo di fare politica, più etico e partecipato.</p>
+                                </ol>
+                                <button class="test-button" data-section="pg" data-goto="1">Pagina precedente</button>
+                                <!-- Pulsante per tornare alla pagina 1 di questa sezione -->
+                            </div>
+                        </div>
+                        
+                        <div class="content-images">
+                            <!-- Contenitore delle immagini della sezione -->
+                            
+                            <!-- Immagini per pagina 1 di Panoramica Generale -->
+                            <div class="image-box pg-image pg-image-1 active" data-page="1">
+                                <!-- Immagine associata alla pagina 1, inizialmente visibile (active) -->
+                                <img src="manifestazione.png" alt="Immagine Panoramica 1" class="section-image">
+                            </div>
+                            <div class="image-box pg-image pg-image-2 active" data-page="1">
+                                <img src="ultras.jpeg" alt="Immagine Panoramica 2" class="section-image">
+                            </div>
+                            
+                            <!-- Immagini per pagina 2 di Panoramica Generale -->
+                            <div class="image-box pg-image pg-image-3" data-page="2">
+                                <!-- Immagine associata alla pagina 2, inizialmente nascosta (senza classe active) -->
+                                <img src="mappa.png" alt="Immagine Panoramica 3" class="section-image">
+                            </div>
+                            <div class="image-box pg-image pg-image-4" data-page="2">
+                                <img src="autogreen.png" alt="Immagine Panoramica 4" class="section-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+            <div class="content-sections">
+                <!-- SEZIONE 2: ARTE -->
+                <div id="arte" class="content-section">
+                    <div class="content-grid">
+                        <div class="content-text">
+                            <!-- Pagina 1 della sezione Arte -->
+                            <div class="content-page arte-page active" data-page="1">
+                                <h2>Arte</h2>
+                                <p>Tradizionalmente, molta arte napoletana è nata come reazione al degrado urbano, all'ingiustizia, all'abbandono: 
+                                    dai murales nei quartieri popolari alla musica neomelodica che racconta la vita di strada. </p>
+                                <p>Molte aree di Napoli vengono ricoperte con murales per <mark>commemorare le morti di criminali oppure ultras</mark> deceduti durante una rissa in trasferta. 
+                                    Un esempio lampante è il murales dedicato a Ugo Russo nel quartiere di Santa Lucia</p>
+                                <p><b>Ugo Russo</b> era un ragazzo di 15 anni,<b> ucciso nella notte tra il 29 febbraio e il 1º marzo 2020</b> da un carabiniere in borghese. Secondo le ricostruzioni ufficiali, 
+                                    Ugo stava tentando una rapina con una pistola (poi rivelatasi finta) ai danni del carabiniere, 
+                                    che ha reagito sparando.</p>
+                                <p>La vicenda ha <mark> diviso l'opinione pubblica </mark> tra chi ha sottolineato l'illegalità dell'atto commesso da Ugo e chi, soprattutto nel suo quartiere, 
+                                    lo ha voluto ricordare come un ragazzo "figlio del popolo", vittima delle condizioni sociali in cui è cresciuto.</p>
+                                <p><b>Tolto questo Napoli rimane tappezzata con murales,se così possiamo definirli, d'odio verso le istituzioni, che non sono per niente di gradimento all'occhio di chi ci abita.</b></p>
+                                <p><button class="test-button" data-section="arte" data-goto="2">Pagina successiva</button></p>
+                            </div>
+                            
+                            <!-- Pagina 2 della sezione Arte -->
+                            <div class="content-page arte-page" data-page="2">
+                                <h2>Arte - Pagina 2</h2>
+                                <p>In una Napoli dove il <b>100%</b> delle persone rispettano la legge, anche nei comportamenti più piccoli; l'arte subisce una trasformazione profonda: 
+                                    da linguaggio di denuncia sociale a forma di espressione libera, condivisa e costruttiva. 
+                                </p>
+                                <p>una Napoli "senza reati" diventerebbe una delle <mark>capitali europee della cultura contemporanea </mark>
+                                    e luoghi come galere ormai abbandonate per il loro inutilizzo diventerebbero il laboratorio di<mark> giovani artisti</mark> per trovare il proprio stile o per l'imparare nuove tecniche.</p>
+                                <p>L'arte diverrebbe uno dei pilastri dell'economia urbana, insieme al turismo culturale e alla creatività locale.</p>
+                                <p>In questa Napoli ideale,<mark>l'arte non è più reazione al disagio e amica della criminalità,</mark> ma costruzione attiva di senso, bellezza e appartenenza. 
+                                    La città non è più tela della sofferenza, ma galleria a cielo aperto della rinascita.</p>
+                                <button class="test-button" data-section="arte" data-goto="1">Pagina precedente</button>
+                            </div>
+                        </div>
+                        
+                        <div class="content-images">
+                            <!-- Immagini per pagina 1 di Arte -->
+                            <div class="image-box arte-image arte-image-1 full-height" data-page="1">
+                                <!-- "full-height" fa sì che l'immagine occupi tutto lo spazio verticale disponibile -->
+                                <img src="ugorusso.png" alt="Immagine Moda 3" class="section-image">
+                            </div>
+                           
+                            <!-- Immagini/video per pagina 2 di Arte -->
+                            <div class="image-box arte-image arte-image-3 full-height" data-page="2">
+                                <!-- Video che si riproduce automaticamente in loop senza audio -->
+                                <video class="section-video" autoplay loop muted>
+                                    <source src="jago.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="content-sections">
+                <!-- SEZIONE 3: MODA -->
+                <div id="moda" class="content-section">
+                    <div class="content-grid">
+                        <div class="content-text">
+                            <!-- Pagina 1 della sezione Moda -->
+                            <div class="content-page moda-page active" data-page="1">
+                                <h2>Moda</h2>
+                                <p><mark>Il mercato del falso</mark> che comprende la produzione e vendita di prodotti contraffatti, 
+                                    soprattutto nel settore moda è una realtà fortemente radicata in molte aree urbane di Napoli. 
+                                    È una delle manifestazioni più visibili dell'economia sommersa.</p>
+                                <p><mark>non è solo un problema economico, ma una vera e propria dinamica di degrado sociale e urbano.</mark> 
+                                    La sua esistenza alimenta comportamenti devianti, 
+                                    marginalizzazione culturale e deterioramento del tessuto urbano, rendendo difficile ogni forma di crescita condivisa e sostenibile</p>
+                                <p>ciò crea diversi disagi:</p>
+                                <ol><b>Impatto economico e legale:</b></ol><br>
+                                <li>Distrugge la concorrenza leale, danneggiando piccole imprese artigianali e commercianti regolari.</li>
+                                <li>Favorisce l'evasione fiscale: l'intero circuito è privo di tracciabilità, quindi non produce ricchezza per la collettività.</li>
+                                <li>Alimenta reti criminali più o meno organizzate, che si arricchiscono sfruttando la necessità e la marginalità sociale.</li><br>
+                                <ol><b>Impatto sociale:</b></ol><br>
+                                <li>Genera una cultura dell'illegalità "normale", in cui il consumo di falso non è percepito come un problema.</li>
+                                <li>Crea abitudine alla contraffazione come stile di vita: "se posso averlo uguale a meno, perché no?".</li>
+                                <li>Diffonde un'estetica standardizzata, priva di identità locale e senso di appartenenza.</li><br>
+                                <ol><b>Conseguenze a lungo termine:</b></ol><br>
+                                <li>Si produce una spirale negativa: la mancanza di legalità scoraggia investimenti, turismo e fiducia nei quartieri</li>
+                                <li>I cittadini si abituano a una "normalità distorta", in cui l'illegalità è parte integrante della vita quotidiana.</li><br>
+                                
+                                <p><button class="test-button" data-section="moda" data-goto="2">Pagina successiva</button></p>
+                            </div>
+                            
+                            <!-- Pagina 2 della sezione Moda -->
+                            <div class="content-page moda-page" data-page="2">
+                                <h2>Moda - Pagina 2</h2>
+                                <p>In una Napoli in cui il 100% delle persone rispetta la legge; niente truffe, niente contraffazioni, 
+                                    nessun furto, neanche piccolo. Questo cambiamento profondo genererebbe una trasformazione culturale e sociale che coinvolge anche il modo di vestire, 
+                                    produrre e vivere la moda.</p>
+                                <p>In molte zone colpite dal degrado, <mark>oggi la moda può assumere il ruolo di "facciata"</mark>,
+                                    un modo per compensare con l'apparenza un vuoto sociale o economico. In un contesto in cui la legalità è assoluta:</p>
+                                <li>Le persone non avrebbero più bisogno di dimostrare valore attraverso il possesso di capi costosi o griffati ottenuti illegalmente.</li>
+                                <li>Si ridurrebbe l'ostentazione del lusso fine a sé stessa (ad esempio abiti di marca indossati per "farsi vedere"), lasciando spazio a uno stile più personale, libero e creativo.</li><br>
+                                <p>Crescerebbe la cultura del <mark>"vestirsi per piacere, non per apparire"</mark>. </p>
+                                <ul><b>Con il totale rispetto delle regole:</b></ul><br>
+                                <li>
+                                    Le aziende che sfruttano il lavoro nero o importano materiali contraffatti spariscono. 
+                                    Ne nasce una nuova economia basata sulla trasparenza e sulla legalità.</li>
+                                <li>Napoli, città con una lunga tradizione sartoriale (pensiamo ai maestri della sartoria napoletana), può riscoprire e modernizzare il proprio artigianato.</li><br>
+                                
+                                <p><mark>I giovani si avvicinano al design e alla moda non solo come consumatori, ma come creatori, imprenditori, stilisti</mark>.</p>
+                                <p>
+                                    <button class="test-button" data-section="moda" data-goto="1">Pagina precedente</button>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-images">
+                            <!-- Immagini per pagina 1 di Moda -->
+                            <div class="image-box moda-image moda-image-1 active" data-page="1">
+                                <img src="bancarella.png" alt="Immagine Moda 1" class="section-image">
+                            </div>
+                            <div class="image-box moda-image moda-image-2 active" data-page="1">
+                                <img src="Napolimagliettasigarette.jpeg" alt="Immagine Moda 2" class="section-image">
+                            </div>
+                            
+                            <!-- Immagine per pagina 2 di Moda - Una sola immagine a tutta altezza -->
+                            <div class="image-box moda-image moda-image-3 full-height" data-page="2">
+                                <img src="Napoli j’adore.jpeg" alt="Immagine Moda 3" class="section-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="content-sections">
+                <!-- SEZIONE 4: BENI COMUNI -->
+                <div id="benicomuni" class="content-section">
+                    <div class="content-grid">
+                        <div class="content-text">
+                            <!-- Pagina 1 della sezione Beni comuni -->
+                            <div class="content-page benicomuni-page active" data-page="1">
+                                <h2>Beni comuni</h2>
+                                <p><mark>I beni comuni sono risorse che appartengono a tutta la comunità:</mark> spazi pubblici (piazze, parchi, spiagge), 
+                                    edifici storici, scuole, teatri comunali, biblioteche, ma anche infrastrutture digitali o culturali.</p>
+                                <ul>Oggi, in molti quartieri di Napoli (come in altre città), i beni comuni spesso:
+                                    <li>sono abbandonati o degradati per mancanza di gestione;</li>
+                                    <li>vengono usati in modo improprio (es. parcheggi abusivi, discariche illegali, occupazioni forzate);</li>
+                                    <li>diventano oggetto di tensione tra cittadini, istituzioni e gruppi sociali.</li>
+                                </ul><br>
+                                <p>In parallelo, il <b>degrado</b> e <b>l'assenza di regole</b> condivise favoriscono anche usi impropri e speculativi degli stessi beni:<mark> aree pubbliche trasformate in parcheggi abusivi, mercatini informali, 
+                                    occupazioni a scopo di lucro</mark>. In questi casi, il concetto di bene comune si svuota: lo spazio, invece che essere gestito collettivamente, diventa oggetto di appropriazione individuale.
+                                    La mancanza di una governance chiara alimenta confusione e fa sì che anche chi si propone in buona fede come "custode" di un bene venga percepito come abusivo o illegittimo.</p>
+                                <p>In sintesi, i beni comuni oggi sono <mark>terreno di conflitto proprio perché incarnano il punto di intersezione tra bisogni collettivi, mancanze istituzionali, interessi privati e pratiche sociali irregolari.</mark> Invece di rappresentare una risorsa condivisa, diventano spesso <b>motivo di scontro</b> e di frammentazione. 
+                                    Eppure, proprio per questo, sono anche uno dei luoghi più cruciali in cui si gioca la possibilità di costruire una cittadinanza attiva e una città più equa.</p>
+                                
+                                <p><button class="test-button" data-section="benicomuni" data-goto="2">Pagina successiva</button></p>
+                            </div>
+                            
+                            <!-- Pagina 2 della sezione Beni comuni -->
+                            <div class="content-page benicomuni-page" data-page="2">
+                                <h2>Beni comuni; la loro associazione con Arte e Moda - Pagina 2</h2>
+                                  
+                                <ul>In un'ipotetica Napoli dove nessuno infrange la legge:
+                                    <li>gli spazi pubblici sono rispettati, curati e vissuti dalla comunità;</li>
+                                    <li>le istituzioni possono lavorare in trasparenza, favorendo progetti partecipativi;</li>
+                                    <li>i cittadini si sentono realmente responsabili di ciò che è "di tutti", sviluppando senso civico e appartenenza.</li>
+                                </ul><br>
+                                <p>Legame con <b>L'arte</b>↓</p>
+                                <ul><mark>L'arte ha bisogno di spazi: pareti, piazze, teatri, scuole, musei.</mark> In una città dove i beni comuni sono accessibili e protetti:
+                                    <li>gli artisti possono creare in sicurezza e con riconoscimento pubblico:</li>
+                                    <li>i muri non sono vandalizzati, ma diventano superfici artistiche autorizzate (es. murales collettivi);</li>
+                                    <li>nascono laboratori, festival e mostre nei quartieri popolari, senza bisogno di "invadere" o "occupare".(esempio fatto prima in Arte,pg.2)</li>
+                                </ul><br>
+                                <p>Legame con <b>La moda</b>↓</p>
+                                <ul><mark>Anche la moda soprattutto quella etica, artigianale, partecipata,</mark> si nutre di spazi e relazioni:
+                                    <li>mercatini locali, sfilate pubbliche, laboratori di cucito, atelier aperti: tutto questo può nascere solo in spazi comuni sicuri;</li>
+                                    <li>i beni comuni diventano "vetrine" della creatività locale: strade pedonali, piazze ristrutturate, palazzi aperti al pubblico;</li>
+                                    <li>la moda, come l'arte, ha bisogno di comunità: non vive solo nei negozi, ma nel tessuto sociale.</li>
+                                </ul><br>
+                                <p><b>Effetto domino: beni comuni → arte + moda → economia e dignità</b></p>
+                                <ol>
+                                    <li>Spazi pubblici vivibili → più eventi artistici e culturali.</li>
+                                    <li>Più eventi → più visibilità per giovani artisti e designer.</li>
+                                    <li>Più visibilità → nuove economie locali e microimprese.</li>
+                                    <li>Più lavoro dignitoso → meno devianza e più orgoglio civico.</li>
+                                </ol> 
+                                <br>                
+                                <p>
+                                    <button class="test-button" data-section="benicomuni" data-goto="1">Pagina precedente</button>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="content-images">
+                            <!-- Immagini per pagina 1 di Beni Comuni -->
+                            <div class="image-box benicomuni-image benicomuni-image-1 active" data-page="1">
+                                <img src="Bosco_drone_foto_Giuseppe_Salviati.jpg" alt="Immagine Beni Comuni 1" class="section-image">
+                            </div>
+                            <div class="image-box benicomuni-image benicomuni-image-2 active" data-page="1">
+                                <img src="P.Plebiscito_Napoli.jpg" alt="Immagine Beni Comuni 2" class="section-image">
+                            </div>
+                            
+                            <!-- Immagini per pagina 2 di Beni Comuni -->
+                            <div class="image-box benicomuni-image benicomuni-image-3" data-page="2">
+                                <img src="maradona.jpeg" alt="Immagine Beni Comuni 3" class="section-image">
+                            </div>
+                            <div class="image-box benicomuni-image benicomuni-image-4" data-page="2">
+                                <img src="modabenicomuni.jpeg" alt="Immagine Beni Comuni 4" class="section-image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Questo codice si attiva solo quando la pagina è completamente caricata
+            // 'DOMContentLoaded' è un evento che segnala che l'HTML è stato completamente analizzato
+            
+            const buttons = document.querySelectorAll('.menu-btn');
+            // Qui raccogliamo tutti i pulsanti del menu in una collezione, per poterli gestire insieme
+            
+            const sections = document.querySelectorAll('.content-section');
+            // Qui raccogliamo tutte le sezioni di contenuto in una collezione
+            
+            // Nascondi tutte le sezioni all'inizio
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                // Imposta la trasparenza a 0 (completamente invisibile)
+                section.style.display = 'none';
+                // Nasconde completamente l'elemento dalla visualizzazione
+            });
+            
+            buttons.forEach(button => {
+                // Per ogni pulsante del menu, aggiungiamo un "ascoltatore" di eventi
+                button.addEventListener('click', function() {
+                    // Questo codice si attiva quando un pulsante viene cliccato
+                    
+                    const targetId = this.getAttribute('data-target');
+                    // Ottiene l'ID della sezione target collegata al pulsante (pg, arte, moda o benicomuni)
+                    
+                    // Resetta tutti i bottoni
+                    buttons.forEach(btn => {
+                        btn.classList.remove('active');
+                        // Rimuove la classe 'active' da tutti i pulsanti, che ne modifica l'aspetto visivo
+                    });
+                    
+                    // Attiva il bottone corrente
+                    this.classList.add('active');
+                    // Aggiunge la classe 'active' solo al pulsante appena cliccato
+                    
+                    // Rimuovi la classe active da tutte le sezioni
+                    sections.forEach(section => {
+                        section.classList.remove('active');
+                        // Rimuove lo stato attivo da tutte le sezioni
+                    });
+                    
+                    // Nascondi tutte le sezioni con una dissolvenza
+                    sections.forEach(section => {
+                        if (section.id !== targetId && section.style.opacity !== '0') {
+                            // Se la sezione non è quella che vogliamo mostrare e non è già nascosta
+                            fadeOut(section);
+                            // Applica un effetto di dissolvenza in uscita
+                        }
+                    });
+                    
+                    // Mostra la sezione selezionata con una dissolvenza
+                    const targetSection = document.getElementById(targetId);
+                    // Trova la sezione che corrisponde all'ID del pulsante cliccato
+                    
+                    if (targetSection.style.opacity === '0' || targetSection.style.display === 'none') {
+                        // Se la sezione è attualmente nascosta
+                        
+                        // Reset le pagine interne - mostra solo la prima pagina
+                        let pages = targetSection.querySelectorAll('.content-page');
+                        // Trova tutte le pagine di contenuto all'interno della sezione
+                        
+                        pages.forEach(page => {
+                            if(page.getAttribute('data-page') === '1') {
+                                page.classList.add('active');
+                                // Attiva solo la prima pagina (pagina 1)
+                            } else {
+                                page.classList.remove('active');
+                                // Disattiva tutte le altre pagine
+                            }
+                        });
+                        
+                        // Reset anche per le immagini - mostra solo quelle della prima pagina
+                        let allImages = targetSection.querySelectorAll('.image-box');
+                        // Trova tutte le immagini all'interno della sezione
+                        
+                        allImages.forEach(img => {
+                            img.classList.remove('active');
+                            // Disattiva tutte le immagini
+                            
+                            if(img.getAttribute('data-page') === '1') {
+                                img.classList.add('active');
+                                // Attiva solo le immagini della prima pagina
+                            }
+                        });
+                        
+                        targetSection.style.display = 'block';
+                        // Rende la sezione visibile nel documento
+                        
+                        // Aggiunge la classe 'active' alla sezione corrente
+                        targetSection.classList.add('active');
+                        
+                        setTimeout(() => {
+                            fadeIn(targetSection);
+                            // Dopo un breve ritardo di 50 millisecondi, applica l'effetto di dissolvenza in entrata
+                            // Il ritardo serve per garantire che il cambiamento di display sia completato
+                        }, 50);
+                    }
+                });
+            });
+            
+            // Gestione navigazione tra pagine
+            document.querySelectorAll('.test-button').forEach(button => {
+                // Per ogni pulsante di navigazione tra pagine
+                button.addEventListener('click', function(e) {
+                    // Quando il pulsante viene cliccato
+                    e.preventDefault();
+                    // Impedisce il comportamento predefinito del pulsante (che potrebbe essere un invio di form)
+                    
+                    const section = this.getAttribute('data-section');
+                    // Ottiene il nome della sezione (pg, arte, moda o benicomuni)
+                    
+                    const gotoPage = this.getAttribute('data-goto');
+                    // Ottiene il numero della pagina a cui navigare
+                    
+                    // Nascondi tutte le pagine della sezione
+                    const pages = document.querySelectorAll(`.${section}-page`);
+                    // Trova tutte le pagine nella sezione corrente
+                    
+                    pages.forEach(page => {
+                        page.classList.remove('active');
+                        // Disattiva tutte le pagine
+                    });
+                    
+                    // Nascondi tutte le immagini della sezione
+                    const images = document.querySelectorAll(`.${section}-image`);
+                    // Trova tutte le immagini nella sezione corrente
+                    
+                    images.forEach(img => {
+                        img.classList.remove('active');
+                        // Disattiva tutte le immagini
+                    });
+                    
+                    // Mostra la pagina di destinazione
+                    const targetPage = document.querySelector(`.${section}-page[data-page="${gotoPage}"]`);
+                    // Trova la pagina specifica a cui vogliamo navigare
+                    
+                    if(targetPage) {
+                        targetPage.classList.add('active');
+                        // Attiva la pagina di destinazione
+                    }
+                    
+                    // Mostra le immagini della pagina di destinazione
+                    const targetImages = document.querySelectorAll(`.${section}-image[data-page="${gotoPage}"]`);
+                    // Trova tutte le immagini associate alla pagina di destinazione
+                    
+                    targetImages.forEach(img => {
+                        img.classList.add('active');
+                        // Attiva le immagini della pagina di destinazione
+                    });
+                });
+            });
+            
+          
+            function fadeIn(element) {
+                // Questa funzione crea un effetto di dissolvenza in entrata (da invisibile a visibile)
+                let opacity = 0;
+                // Inizia con opacità 0 (completamente trasparente)
+                element.style.opacity = opacity;
+                
+                const fadeEffect = setInterval(() => {
+                    // Crea un timer che si ripete ogni 25 millisecondi
+                    if (opacity < 1) {
+                        opacity += 0.05;
+                        // Aumenta gradualmente l'opacità di 0.05 ad ogni ciclo
+                        element.style.opacity = opacity;
+                        // Applica la nuova opacità all'elemento
+                    } else {
+                        clearInterval(fadeEffect);
+                        // Quando l'opacità raggiunge 1 (completamente visibile), ferma il timer
+                    }
+                }, 25); // 25 millisecondi - velocità dell'animazione (più alto = più lento)
+            }
+            
+            function fadeOut(element) {
+                // Questa funzione crea un effetto di dissolvenza in uscita (da visibile a invisibile)
+                let opacity = 1;
+                // Inizia con opacità 1 (completamente visibile)
+                
+                const fadeEffect = setInterval(() => {
+                    // Crea un timer che si ripete senza ritardo (0 millisecondi)
+                    if (opacity > 0) {
+                        opacity -= 0.05;
+                        // Diminuisce gradualmente l'opacità di 0.05 ad ogni ciclo
+                        element.style.opacity = opacity;
+                        // Applica la nuova opacità all'elemento
+                    } else {
+                        element.style.display = 'none';
+                        // Quando l'elemento è completamente trasparente, lo nasconde completamente
+                        element.classList.remove('active');
+                        // Rimuove anche la classe 'active' dall'elemento
+                        clearInterval(fadeEffect);
+                        // Ferma il timer
+                    }
+                }, 0); // 0 millisecondi - animazione molto veloce
+            }
+        });
+    </script>
